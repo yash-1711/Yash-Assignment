@@ -1,0 +1,153 @@
+.dashboard-container {
+  background-color:white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-header {
+  background: #9ed1f8;
+  color: white;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.dashboard-title {
+  padding: 14px;
+  color: rgb(1, 1, 15);
+  background: transparent;
+  text-align: center;
+  font-family: serif;
+  font-size: 45px;
+}
+
+/*.dashboard-main {
+  align-self: stretch;
+  flex-grow: 1;
+}*/
+
+.input-section {
+  background: #9ed1f8;
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.input-container {
+  background-color: rgb(32, 95, 212);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.search-input {
+  background-color:azure;
+  outline: none;
+  
+  font-size: 16px;
+  
+  
+}
+
+.transactions-section {
+  background: #9ed1f8;
+  border: 0px solid red;
+  height: 300px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.transaction-table {
+  border-collapse: collapse;
+  font-family: bree serif, "Times New Roman", Times, serif;
+  border-radius: 10px;
+}
+
+.transaction-table thead {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+.transaction-table thead th {
+  padding: 10px;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+.transaction-table tbody td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.transaction-table td,
+.transaction-table tr {
+  min-width: 50px;
+  /* width: 16%; */
+  max-height: 50px;
+}
+
+.sold-status {
+  font-size: 20px;
+  text-align: center;
+}
+
+.loading-view {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+}
+
+/* * {
+  border: 1px solid red !important;
+} */
+
+.empty-view {
+  text-align: center;
+  font-family: bree serif, "Times New Roman", Times, serif;
+  padding: 20px;
+}
+
+.pagination-container {
+  background: #9ed1f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3px 10px;
+  border: 1px solid grey;
+}
+
+.pagination-buttons button[type="button"] {
+  padding: 10px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.failure-view {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.retry-button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(0, 204, 255);
+  cursor: pointer;
+}
